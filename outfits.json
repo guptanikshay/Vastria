@@ -1,0 +1,3326 @@
+{
+  "success": true,
+  "data": {
+    "outfits": [
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 83.83
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 83.11
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 82.55
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbe",
+          "name": "Black Formal Pant",
+          "subCategory": "pants",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 82
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 81.99
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 81.73
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 81.22
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 81.08
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbe",
+          "name": "Black Formal Pant",
+          "subCategory": "pants",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 80.83
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde62",
+            "name": "Black Hoodie",
+            "subCategory": "hoodie",
+            "color": "black",
+            "style": ["casual", "streetwear"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c56e545aa32a0dc45e223c",
+          "name": "Black Slim Jeans",
+          "subCategory": "jeans",
+          "color": "black",
+          "style": ["casual"]
+        },
+        "footwear": {
+          "id": "69c56e615aa32a0dc45e223f",
+          "name": "White Nike Shoes",
+          "subCategory": "sneakers",
+          "color": "white",
+          "style": ["casual"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde66",
+            "name": "Black Digital Watch",
+            "subCategory": "watch",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde68",
+            "name": "White Athletic Socks",
+            "subCategory": "socks",
+            "color": "white"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6a",
+            "name": "Black Baseball Cap",
+            "subCategory": "cap",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 80.83
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 80.73
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 80.59
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbe",
+          "name": "Black Formal Pant",
+          "subCategory": "pants",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 80.55
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 80.22
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 79.8
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 79.8
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 79.59
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 79.57
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acc2",
+            "name": "Red Formal Shirt",
+            "subCategory": "shirt",
+            "color": "red",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbe",
+          "name": "Black Formal Pant",
+          "subCategory": "pants",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 79.2
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 79.2
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acc2",
+            "name": "Red Formal Shirt",
+            "subCategory": "shirt",
+            "color": "red",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbe",
+          "name": "Black Formal Pant",
+          "subCategory": "pants",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 79.08
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5e",
+            "name": "Black Leather Jacket",
+            "subCategory": "leather jacket",
+            "color": "black",
+            "style": ["streetwear"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c56e545aa32a0dc45e223c",
+          "name": "Black Slim Jeans",
+          "subCategory": "jeans",
+          "color": "black",
+          "style": ["casual"]
+        },
+        "footwear": {
+          "id": "69c56e615aa32a0dc45e223f",
+          "name": "White Nike Shoes",
+          "subCategory": "sneakers",
+          "color": "white",
+          "style": ["casual"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde66",
+            "name": "Black Digital Watch",
+            "subCategory": "watch",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde68",
+            "name": "White Athletic Socks",
+            "subCategory": "socks",
+            "color": "white"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6a",
+            "name": "Black Baseball Cap",
+            "subCategory": "cap",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.99
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.82
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.6
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde60",
+            "name": "Grey Cardigan",
+            "subCategory": "cardigan",
+            "color": "grey",
+            "style": ["casual"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c56e545aa32a0dc45e223c",
+          "name": "Black Slim Jeans",
+          "subCategory": "jeans",
+          "color": "black",
+          "style": ["casual"]
+        },
+        "footwear": {
+          "id": "69c56e615aa32a0dc45e223f",
+          "name": "White Nike Shoes",
+          "subCategory": "sneakers",
+          "color": "white",
+          "style": ["casual"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde66",
+            "name": "Black Digital Watch",
+            "subCategory": "watch",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde68",
+            "name": "White Athletic Socks",
+            "subCategory": "socks",
+            "color": "white"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6a",
+            "name": "Black Baseball Cap",
+            "subCategory": "cap",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.6
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acc2",
+            "name": "Red Formal Shirt",
+            "subCategory": "shirt",
+            "color": "red",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.56
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.54
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.5
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde61",
+            "name": "Beige Nehru Jacket",
+            "subCategory": "nehru jacket",
+            "color": "beige",
+            "style": ["ethnic"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.5
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.27
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.25
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbe",
+          "name": "Black Formal Pant",
+          "subCategory": "pants",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.13
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde60",
+            "name": "Grey Cardigan",
+            "subCategory": "cardigan",
+            "color": "grey",
+            "style": ["casual"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.13
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 78.05
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.92
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.85
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.82
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.82
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.47
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbb",
+            "name": "Baby Pink Formal Shirt",
+            "subCategory": "shirt",
+            "color": "pink",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.44
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbf",
+            "name": "Light Grey Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light grey",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.44
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5b",
+            "name": "Navy Blue Blazer",
+            "subCategory": "blazer",
+            "color": "navy blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.41
+      },
+      {
+        "top": [
+          {
+            "id": "69c8007636d50b85f04dde62",
+            "name": "Black Hoodie",
+            "subCategory": "hoodie",
+            "color": "black",
+            "style": ["casual", "streetwear"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5e",
+            "name": "Black Leather Jacket",
+            "subCategory": "leather jacket",
+            "color": "black",
+            "style": ["streetwear"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c56e545aa32a0dc45e223c",
+          "name": "Black Slim Jeans",
+          "subCategory": "jeans",
+          "color": "black",
+          "style": ["casual"]
+        },
+        "footwear": {
+          "id": "69c56e615aa32a0dc45e223f",
+          "name": "White Nike Shoes",
+          "subCategory": "sneakers",
+          "color": "white",
+          "style": ["casual"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde66",
+            "name": "Black Digital Watch",
+            "subCategory": "watch",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde68",
+            "name": "White Athletic Socks",
+            "subCategory": "socks",
+            "color": "white"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6a",
+            "name": "Black Baseball Cap",
+            "subCategory": "cap",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.41
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde61",
+            "name": "Beige Nehru Jacket",
+            "subCategory": "nehru jacket",
+            "color": "beige",
+            "style": ["ethnic"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.31
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5c",
+            "name": "Black Blazer",
+            "subCategory": "blazer",
+            "color": "black",
+            "style": ["formal"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6d",
+            "name": "Navy Blue Tie",
+            "subCategory": "tie",
+            "color": "navy blue"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.28
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde60",
+            "name": "Grey Cardigan",
+            "subCategory": "cardigan",
+            "color": "grey",
+            "style": ["casual"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc1",
+          "name": "Grey Formal Pant",
+          "subCategory": "pants",
+          "color": "grey",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.22
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde5e",
+            "name": "Black Leather Jacket",
+            "subCategory": "leather jacket",
+            "color": "black",
+            "style": ["streetwear"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.15
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          },
+          {
+            "id": "69c8007636d50b85f04dde62",
+            "name": "Black Hoodie",
+            "subCategory": "hoodie",
+            "color": "black",
+            "style": ["casual", "streetwear"]
+          }
+        ],
+        "layered": true,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acc0",
+          "name": "Beige Formal Pant",
+          "subCategory": "pants",
+          "color": "beige",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 77.15
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acbc",
+            "name": "Light Blue Formal Shirt",
+            "subCategory": "shirt",
+            "color": "light blue",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc4",
+          "name": "Brown Formal Shoes",
+          "subCategory": "shoes",
+          "color": "brown",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde64",
+            "name": "Brown Leather Belt",
+            "subCategory": "belt",
+            "color": "brown"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 76.98
+      },
+      {
+        "top": [
+          {
+            "id": "69c57f8bfd749fff93a8acba",
+            "name": "White Formal Shirt",
+            "subCategory": "shirt",
+            "color": "white",
+            "style": ["formal"]
+          }
+        ],
+        "layered": false,
+        "bottom": {
+          "id": "69c57f8bfd749fff93a8acbd",
+          "name": "Navy Blue Formal Pant",
+          "subCategory": "pants",
+          "color": "navy blue",
+          "style": ["formal"]
+        },
+        "footwear": {
+          "id": "69c57f8bfd749fff93a8acc3",
+          "name": "Black Formal Shoes",
+          "subCategory": "shoes",
+          "color": "black",
+          "style": ["formal"]
+        },
+        "accessories": [
+          {
+            "id": "69c8007636d50b85f04dde63",
+            "name": "Black Leather Belt",
+            "subCategory": "belt",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde65",
+            "name": "Silver Analogue Watch",
+            "subCategory": "watch",
+            "color": "silver"
+          },
+          {
+            "id": "69c8007636d50b85f04dde67",
+            "name": "Black Dress Socks",
+            "subCategory": "socks",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6b",
+            "name": "Black Aviator Sunglasses",
+            "subCategory": "sunglasses",
+            "color": "black"
+          },
+          {
+            "id": "69c8007636d50b85f04dde6c",
+            "name": "Grey Wool Scarf",
+            "subCategory": "scarf",
+            "color": "grey"
+          }
+        ],
+        "score": 76.97
+      }
+    ],
+    "summary": {
+      "generated": 307,
+      "returned": 50,
+      "topwear": 15,
+      "bottomwear": 5,
+      "fullbody": 0,
+      "footwear": 3,
+      "accessories": 12,
+      "topConfigs": 84,
+      "averageScore": 79.12
+    }
+  }
+}

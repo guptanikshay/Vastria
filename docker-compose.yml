@@ -1,0 +1,60 @@
+# ===========================================
+# Docker Compose — Local Orchestration
+# ===========================================
+# This file defines how to run your multi-container app locally.
+# Run with: docker-compose up --build
+# Stop with: docker-compose down
+# ===========================================
+
+services:
+  # ---------- Backend API ----------
+  backend:
+    build:
+      context: ./vastria-backend
+      dockerfile: Dockerfile
+    container_name: vastria-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000" # Expose backend on host port 5000
+    env_file:
+      - ./vastria-backend/.env # Load all env vars from .env file
+    networks:
+      - vastria-network
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://localhost:5000/",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # ---------- Frontend (Nginx) ----------
+  frontend:
+    build:
+      context: ./vastria-frontend
+      dockerfile: Dockerfile
+      args:
+        # Pass build-time env var for Vite
+        VITE_GOOGLE_CLIENT_ID: ${VITE_GOOGLE_CLIENT_ID}
+    container_name: vastria-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80" # Expose frontend on host port 80
+    depends_on:
+      backend:
+        condition: service_healthy # Wait for backend to be healthy
+    networks:
+      - vastria-network
+
+# Shared network so containers can talk to each other by name
+# (frontend Nginx can reach "backend:5000" because of this)
+networks:
+  vastria-network:
+    driver: bridge

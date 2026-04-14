@@ -1,0 +1,44 @@
+# ===========================================
+# Ingress — The "Front Door" of Your App
+# ===========================================
+# WHAT IS AN INGRESS?
+# It's like a receptionist that routes incoming internet traffic to the
+# correct service based on the URL path.
+#
+# / → Frontend (React app)
+# /api/* → Backend (Express API)
+#
+# PREREQUISITES:
+# Install an Ingress Controller first (e.g., Nginx Ingress Controller):
+#   kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.2/deploy/static/provider/cloud/deploy.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vastria-ingress
+  namespace: vastria
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "10m"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "120"
+spec:
+  ingressClassName: nginx
+  rules:
+    # Replace with your domain, or remove 'host' to match any hostname
+    - host: vastria.yourdomain.com
+      http:
+        paths:
+          # Backend API routes
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: vastria-backend
+                port:
+                  number: 5000
+          # Frontend (catch-all)
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: vastria-frontend
+                port:
+                  number: 80

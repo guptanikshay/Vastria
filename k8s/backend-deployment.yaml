@@ -1,0 +1,78 @@
+# ===========================================
+# Backend Deployment
+# ===========================================
+# WHAT IS A DEPLOYMENT?
+# It tells Kubernetes: "I want 2 copies of my backend running at all times."
+# If one crashes, Kubernetes automatically creates a new one.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vastria-backend
+  namespace: vastria
+  labels:
+    app: vastria-backend
+spec:
+  replicas: 2 # Run 2 copies for high availability
+  selector:
+    matchLabels:
+      app: vastria-backend
+  template:
+    metadata:
+      labels:
+        app: vastria-backend
+    spec:
+      containers:
+        - name: vastria-backend
+          # Replace <your-dockerhub-username> with your actual Docker Hub username
+          image: <your-dockerhub-username>/vastria-backend:latest
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - secretRef:
+                name: vastria-backend-secrets # Load all secrets as env vars
+          env:
+            - name: PORT
+              value: "5000"
+          # Resource limits — prevents one container from eating all server resources
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          # Liveness probe: "Is the container alive?" If not, Kubernetes restarts it.
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 15
+            periodSeconds: 30
+          # Readiness probe: "Is the container ready to receive traffic?"
+          # Kubernetes won't send traffic until this passes.
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+---
+# ===========================================
+# Backend Service
+# ===========================================
+# WHAT IS A SERVICE?
+# Pods come and go (they have random IPs). A Service gives them a stable
+# internal DNS name. Other pods can reach the backend at "vastria-backend:5000".
+apiVersion: v1
+kind: Service
+metadata:
+  name: vastria-backend
+  namespace: vastria
+spec:
+  selector:
+    app: vastria-backend # Route traffic to pods with this label
+  ports:
+    - protocol: TCP
+      port: 5000 # Service port
+      targetPort: 5000 # Container port
+  type: ClusterIP # Internal only (not exposed to internet directly)

@@ -1,0 +1,9 @@
+# ===========================================
+# Kubernetes Namespace
+# ===========================================
+# WHY? Namespaces isolate your app from other workloads on the cluster.
+# Think of it like a folder for your Kubernetes resources.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vastria
