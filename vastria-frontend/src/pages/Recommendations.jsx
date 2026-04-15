@@ -126,7 +126,7 @@ export default function Recommendations() {
             if (!analysis) fetchAnalysis();
           }}
         >
-          Wardrobe Analysis
+          Wardrobe Analysis and Recommendations
         </button>
         <button
           className={`tab ${tab === "favourites" ? "active" : ""}`}
