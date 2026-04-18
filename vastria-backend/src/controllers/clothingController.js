@@ -9,39 +9,103 @@ const {
   getFormOptions,
 } = require("../services/aiClothingService");
 
+const MAX_BATCH_IMAGES = 25;
+const BATCH_ANALYSIS_CONCURRENCY = 4;
+
+function buildClothingPayload(data, userId) {
+  const attrs = data.attributes || {};
+
+  return {
+    user: userId,
+    category: data.category,
+    subCategory: data.subCategory,
+    itemName: data.itemName,
+    attributes: {
+      color: attrs.color || data.color,
+      secondaryColors: attrs.secondaryColors || data.secondaryColors || [],
+      pattern: attrs.pattern || data.pattern,
+      material: attrs.material || data.material,
+      texture: attrs.texture || data.texture,
+      fit: attrs.fit || data.fit,
+      length: attrs.length || data.length,
+    },
+    style: data.style || [],
+    occasion: data.occasion || [],
+    season: data.season || [],
+    weather: data.weather || [],
+    brand: data.brand,
+    price: data.price,
+    currency: data.currency || "INR",
+    tags: data.tags || [],
+    metadata: data.metadata || {},
+    media: {
+      imageUrl: data.media?.imageUrl || data.imageUrl,
+      gallery: data.media?.gallery || data.gallery || [],
+    },
+  };
+}
+
+async function uploadBufferToCloudinary(buffer) {
+  return new Promise((resolve, reject) => {
+    const uploadStream = cloudinary.uploader.upload_stream(
+      { folder: "vastria" },
+      (error, uploaded) => {
+        if (error) return reject(error);
+        resolve(uploaded);
+      },
+    );
+
+    uploadStream.end(buffer);
+  });
+}
+
+async function analyzeAndUploadFile(file) {
+  const buffer = file.buffer;
+  const mimeType = file.mimetype || "image/jpeg";
+
+  const [cloudinaryResult, details] = await Promise.all([
+    uploadBufferToCloudinary(buffer),
+    analyzeClothingBuffer(buffer, mimeType),
+  ]);
+
+  return {
+    imageUrl: cloudinaryResult.secure_url,
+    publicId: cloudinaryResult.public_id,
+    details,
+  };
+}
+
+async function runWithConcurrency(items, concurrency, worker) {
+  const results = new Array(items.length);
+  let index = 0;
+
+  async function next() {
+    const currentIndex = index;
+    index += 1;
+
+    if (currentIndex >= items.length) return;
+
+    try {
+      results[currentIndex] = await worker(items[currentIndex], currentIndex);
+    } catch (error) {
+      results[currentIndex] = { error };
+    }
+
+    await next();
+  }
+
+  const runners = Array.from(
+    { length: Math.min(concurrency, items.length) },
+    () => next(),
+  );
+
+  await Promise.all(runners);
+  return results;
+}
+
 exports.createClothing = async (req, res) => {
   try {
-    const data = req.body;
-    const attrs = data.attributes || {};
-
-    const newClothing = new Clothing({
-      user: req.user._id,
-      category: data.category,
-      subCategory: data.subCategory,
-      itemName: data.itemName,
-      attributes: {
-        color: attrs.color || data.color,
-        secondaryColors: attrs.secondaryColors || data.secondaryColors || [],
-        pattern: attrs.pattern || data.pattern,
-        material: attrs.material || data.material,
-        texture: attrs.texture || data.texture,
-        fit: attrs.fit || data.fit,
-        length: attrs.length || data.length,
-      },
-      style: data.style || [],
-      occasion: data.occasion || [],
-      season: data.season || [],
-      weather: data.weather || [],
-      brand: data.brand,
-      price: data.price,
-      currency: data.currency || "INR",
-      tags: data.tags || [],
-      metadata: data.metadata || {},
-      media: {
-        imageUrl: data.media?.imageUrl || data.imageUrl,
-        gallery: data.media?.gallery || data.gallery || [],
-      },
-    });
+    const newClothing = new Clothing(buildClothingPayload(req.body, req.user._id));
 
     const saved = await newClothing.save();
 
@@ -92,17 +156,7 @@ exports.uploadImage = async (req, res) => {
         .json({ success: false, message: "No file uploaded" });
     }
 
-    const result = await new Promise((resolve, reject) => {
-      const uploadStream = cloudinary.uploader.upload_stream(
-        { folder: "vastria" },
-        (error, uploaded) => {
-          if (error) return reject(error);
-          resolve(uploaded);
-        },
-      );
-
-      uploadStream.end(req.file.buffer);
-    });
+    const result = await uploadBufferToCloudinary(req.file.buffer);
 
     res.status(200).json({
       success: true,
@@ -122,29 +176,13 @@ exports.scanClothing = async (req, res) => {
         .json({ success: false, message: "No file uploaded" });
     }
 
-    const buffer = req.file.buffer;
-    const mimeType = req.file.mimetype || "image/jpeg";
-
-    // Upload to Cloudinary and analyze with Gemini Vision in parallel
-    const [cloudinaryResult, details] = await Promise.all([
-      new Promise((resolve, reject) => {
-        const uploadStream = cloudinary.uploader.upload_stream(
-          { folder: "vastria" },
-          (error, uploaded) => {
-            if (error) return reject(error);
-            resolve(uploaded);
-          },
-        );
-        uploadStream.end(buffer);
-      }),
-      analyzeClothingBuffer(buffer, mimeType),
-    ]);
+    const { imageUrl, publicId, details } = await analyzeAndUploadFile(req.file);
 
     res.status(200).json({
       success: true,
       data: {
-        imageUrl: cloudinaryResult.secure_url,
-        publicId: cloudinaryResult.public_id,
+        imageUrl,
+        publicId,
         details,
       },
     });
@@ -153,6 +191,109 @@ exports.scanClothing = async (req, res) => {
     res
       .status(500)
       .json({ success: false, message: "Scan failed", error: error.message });
+  }
+};
+
+exports.scanClothingBatch = async (req, res) => {
+  try {
+    const files = req.files || [];
+
+    if (!files.length) {
+      return res
+        .status(400)
+        .json({ success: false, message: "No images uploaded" });
+    }
+
+    if (files.length > MAX_BATCH_IMAGES) {
+      return res.status(400).json({
+        success: false,
+        message: `You can upload up to ${MAX_BATCH_IMAGES} images at once`,
+      });
+    }
+
+    const processed = await runWithConcurrency(
+      files,
+      BATCH_ANALYSIS_CONCURRENCY,
+      async (file) => {
+        const { imageUrl, details } = await analyzeAndUploadFile(file);
+        return {
+          fileName: file.originalname,
+          payload: buildClothingPayload(
+            {
+              ...details,
+              media: { imageUrl },
+            },
+            req.user._id,
+          ),
+        };
+      },
+    );
+
+    const successfulItems = processed.filter((result) => result?.payload);
+    const failures = processed
+      .map((result, idx) => {
+        if (!result?.error) return null;
+        return {
+          fileName: files[idx]?.originalname || `image-${idx + 1}`,
+          message: result.error.message || "Failed to analyze image",
+        };
+      })
+      .filter(Boolean);
+
+    if (!successfulItems.length) {
+      return res.status(500).json({
+        success: false,
+        message: "Failed to analyze uploaded images",
+        data: { savedCount: 0, failures },
+      });
+    }
+
+    const saveResults = await Promise.allSettled(
+      successfulItems.map((item) => new Clothing(item.payload).save()),
+    );
+    const savedItems = saveResults
+      .filter((result) => result.status === "fulfilled")
+      .map((result) => result.value);
+    const saveFailures = saveResults
+      .map((result, idx) => {
+        if (result.status === "fulfilled") return null;
+        return {
+          fileName: successfulItems[idx]?.fileName || `image-${idx + 1}`,
+          message: result.reason?.message || "Failed to save item",
+        };
+      })
+      .filter(Boolean);
+
+    failures.push(...saveFailures);
+
+    if (!savedItems.length) {
+      return res.status(500).json({
+        success: false,
+        message: "Failed to save analyzed items",
+        data: { savedCount: 0, failures },
+      });
+    }
+
+    res.status(201).json({
+      success: true,
+      message:
+        failures.length > 0
+          ? `Added ${savedItems.length} items. ${failures.length} image(s) could not be processed.`
+          : `Added ${savedItems.length} items to your wardrobe.`,
+      data: {
+        savedCount: savedItems.length,
+        totalUploaded: files.length,
+        items: savedItems,
+        failures,
+      },
+    });
+  } catch (error) {
+    console.error("scanClothingBatch error", error);
+    res.status(500).json({
+      success: false,
+      message: "Batch scan failed",
+      error: error.message,
+    });
   }
 };
 

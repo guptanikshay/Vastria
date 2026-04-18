@@ -1,14 +1,44 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Upload, Loader, Search } from "lucide-react";
+import { Upload, Loader, Search, Camera, Images, X } from "lucide-react";
 import api from "../api/axios";
+
+const MAX_BATCH_UPLOAD = 25;
+
+function buildFormFromDetails(details) {
+  return {
+    category: details.category || "",
+    subCategory: details.subCategory || "",
+    itemName: details.itemName || "",
+    color: details.attributes?.color || "",
+    secondaryColors: details.attributes?.secondaryColors || [],
+    pattern: details.attributes?.pattern || "",
+    material: details.attributes?.material || "",
+    fit: details.attributes?.fit || "",
+    length: details.attributes?.length || "",
+    style: details.style || [],
+    occasion: details.occasion || [],
+    season: details.season || [],
+    weather: details.weather || [],
+    brand: details.brand || "",
+    price: "",
+    tags: details.tags || [],
+  };
+}
 
 export default function AddItem() {
   const navigate = useNavigate();
   const fileInputRef = useRef(null);
+  const videoRef = useRef(null);
+  const canvasRef = useRef(null);
+  const streamRef = useRef(null);
   const [step, setStep] = useState("upload");
   const [scanning, setScanning] = useState(false);
+  const [scanMessage, setScanMessage] = useState("Analyzing your item...");
   const [saving, setSaving] = useState(false);
+  const [cameraOpen, setCameraOpen] = useState(false);
+  const [cameraLoading, setCameraLoading] = useState(false);
+  const [capturing, setCapturing] = useState(false);
   const [imageUrl, setImageUrl] = useState("");
   const [formOptions, setFormOptions] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,45 +72,195 @@ export default function AddItem() {
       .catch(console.error);
   }, []);
 
-  const handleFileSelect = async (file) => {
-    if (!file) return;
+  useEffect(() => {
+    return () => {
+      streamRef.current?.getTracks().forEach((track) => track.stop());
+      streamRef.current = null;
+    };
+  }, []);
+
+  const stopCamera = () => {
+    streamRef.current?.getTracks().forEach((track) => track.stop());
+    streamRef.current = null;
+
+    if (videoRef.current) {
+      videoRef.current.srcObject = null;
+    }
+  };
+
+  const closeCameraModal = () => {
+    stopCamera();
+    setCameraOpen(false);
+    setCapturing(false);
+  };
+
+  const attachVideoRef = (node) => {
+    videoRef.current = node;
+
+    if (node && streamRef.current) {
+      node.srcObject = streamRef.current;
+      node.play().catch(() => {});
+    }
+  };
+
+  const getCameraErrorMessage = (error) => {
+    switch (error?.name) {
+      case "NotFoundError":
+      case "DevicesNotFoundError":
+        return "No camera found on this device.";
+      case "NotAllowedError":
+      case "PermissionDeniedError":
+      case "SecurityError":
+        return "Camera access was blocked. Please allow camera permission in your browser and try again.";
+      case "NotReadableError":
+      case "TrackStartError":
+        return "Your camera is currently unavailable. It may already be in use by another app.";
+      case "OverconstrainedError":
+      case "ConstraintNotSatisfiedError":
+        return "This browser could not start the selected camera.";
+      default:
+        return "Unable to access your camera right now.";
+    }
+  };
+
+  const handleOpenCamera = async () => {
+    if (cameraLoading || scanning) return;
+
+    if (!navigator.mediaDevices?.getUserMedia) {
+      alert("Camera access is not supported in this browser.");
+      return;
+    }
+
+    setCameraLoading(true);
+
+    try {
+      stopCamera();
+
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: { ideal: "environment" } },
+        audio: false,
+      });
+
+      if (!stream.getVideoTracks().length) {
+        stream.getTracks().forEach((track) => track.stop());
+        alert("No camera found on this device.");
+        return;
+      }
+
+      streamRef.current = stream;
+      setCameraOpen(true);
+    } catch (error) {
+      alert(getCameraErrorMessage(error));
+    } finally {
+      setCameraLoading(false);
+    }
+  };
+
+  const handleCapturePhoto = async () => {
+    const video = videoRef.current;
+    const canvas = canvasRef.current;
+
+    if (!video || !canvas || !video.videoWidth || !video.videoHeight) {
+      alert("Camera is still starting. Please wait a moment and try again.");
+      return;
+    }
+
+    setCapturing(true);
+
+    try {
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      const blob = await new Promise((resolve) => {
+        canvas.toBlob(resolve, "image/jpeg", 0.92);
+      });
+
+      if (!blob) {
+        throw new Error("capture_failed");
+      }
+
+      const capturedFile = new File([blob], `camera-${Date.now()}.jpg`, {
+        type: "image/jpeg",
+      });
+
+      closeCameraModal();
+      await handleFileSelect([capturedFile]);
+    } catch (error) {
+      alert("Failed to capture the image from your camera.");
+    } finally {
+      setCapturing(false);
+    }
+  };
+
+  const handleFileSelect = async (files) => {
+    const selectedFiles = Array.from(files || []).filter((file) =>
+      file?.type?.startsWith("image/"),
+    );
+    if (!selectedFiles.length) return;
+
+    if (selectedFiles.length > MAX_BATCH_UPLOAD) {
+      alert(`You can upload up to ${MAX_BATCH_UPLOAD} images at once.`);
+      return;
+    }
+
+    if (selectedFiles.length > 1) {
+      setScanning(true);
+      setScanMessage(
+        `Analyzing ${selectedFiles.length} items for your wardrobe...`,
+      );
+      try {
+        const fd = new FormData();
+        selectedFiles.forEach((file) => fd.append("images", file));
+
+        const res = await api.post("/clothing/scan-batch", fd);
+        const { savedCount, failures = [] } = res.data.data || {};
+
+        if (failures.length > 0) {
+          alert(
+            `Added ${savedCount} item(s). ${failures.length} image(s) could not be processed.`,
+          );
+        } else {
+          alert(`Added ${savedCount} item(s) to your wardrobe.`);
+        }
+
+        navigate("/");
+      } catch (err) {
+        alert(
+          err.response?.data?.message ||
+            "Batch upload failed. Please try again.",
+        );
+      } finally {
+        setScanning(false);
+        setScanMessage("Analyzing your item...");
+      }
+      return;
+    }
+
+    const [file] = selectedFiles;
     setScanning(true);
+    setScanMessage("Analyzing your item...");
     try {
       const fd = new FormData();
       fd.append("image", file);
       const res = await api.post("/clothing/scan", fd);
       const { imageUrl: url, details } = res.data.data;
       setImageUrl(url);
-      setForm({
-        category: details.category || "",
-        subCategory: details.subCategory || "",
-        itemName: details.itemName || "",
-        color: details.attributes?.color || "",
-        secondaryColors: details.attributes?.secondaryColors || [],
-        pattern: details.attributes?.pattern || "",
-        material: details.attributes?.material || "",
-        fit: details.attributes?.fit || "",
-        length: details.attributes?.length || "",
-        style: details.style || [],
-        occasion: details.occasion || [],
-        season: details.season || [],
-        weather: details.weather || [],
-        brand: details.brand || "",
-        price: "",
-        tags: details.tags || [],
-      });
+      setForm(buildFormFromDetails(details));
       setStep("review");
     } catch (err) {
       alert(err.response?.data?.message || "Scan failed. Please try again.");
     } finally {
       setScanning(false);
+      setScanMessage("Analyzing your item...");
     }
   };
 
   const handleDrop = (e) => {
     e.preventDefault();
-    const file = e.dataTransfer.files[0];
-    if (file?.type.startsWith("image/")) handleFileSelect(file);
+    handleFileSelect(e.dataTransfer.files);
   };
 
   const handleSearch = async () => {
@@ -106,24 +286,7 @@ export default function AddItem() {
       const res = await api.post("/clothing/analyze-image", { imageUrl: url });
       const details = res.data.data;
       setImageUrl(url);
-      setForm({
-        category: details.category || "",
-        subCategory: details.subCategory || "",
-        itemName: details.itemName || "",
-        color: details.attributes?.color || "",
-        secondaryColors: details.attributes?.secondaryColors || [],
-        pattern: details.attributes?.pattern || "",
-        material: details.attributes?.material || "",
-        fit: details.attributes?.fit || "",
-        length: details.attributes?.length || "",
-        style: details.style || [],
-        occasion: details.occasion || [],
-        season: details.season || [],
-        weather: details.weather || [],
-        brand: details.brand || "",
-        price: "",
-        tags: details.tags || [],
-      });
+      setForm(buildFormFromDetails(details));
       setStep("review");
     } catch (err) {
       alert(
@@ -191,23 +354,98 @@ export default function AddItem() {
           {scanning ? (
             <div className="upload-scanning">
               <Loader size={40} className="spin" />
-              <p>Analyzing your item...</p>
+              <p>{scanMessage}</p>
             </div>
           ) : (
-            <>
-              <Upload size={48} strokeWidth={1.5} />
-              <p>Drag & drop an image here</p>
-              <span className="upload-hint">or click to browse</span>
-            </>
-          )}
+              <>
+                <Upload size={48} strokeWidth={1.5} />
+                <p>Add up to 25 images here</p>
+                <div className="upload-actions">
+                  <button
+                    type="button"
+                  className="btn btn-primary upload-action-btn"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    fileInputRef.current?.click();
+                  }}
+                >
+                  <Images size={18} />
+                  Browse Photos
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-secondary upload-action-btn"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleOpenCamera();
+                  }}
+                  disabled={cameraLoading}
+                >
+                  <Camera size={18} />
+                    {cameraLoading ? "Starting Camera..." : "Use Camera"}
+                  </button>
+                </div>
+              </>
+            )}
           <input
             ref={fileInputRef}
             type="file"
             accept="image/*"
+            multiple
             hidden
-            onChange={(e) => handleFileSelect(e.target.files[0])}
+            onChange={(e) => {
+              handleFileSelect(e.target.files);
+              e.target.value = "";
+            }}
           />
         </div>
+
+        {cameraOpen && (
+          <div className="modal-overlay" onClick={closeCameraModal}>
+            <div
+              className="modal-content camera-modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button className="modal-close" onClick={closeCameraModal}>
+                <X size={20} />
+              </button>
+              <div className="camera-modal-body">
+                <div className="camera-preview-shell">
+                  <video
+                    ref={attachVideoRef}
+                    className="camera-preview"
+                    autoPlay
+                    playsInline
+                    muted
+                  />
+                </div>
+                <canvas ref={canvasRef} hidden />
+                <div className="camera-modal-footer">
+                  <p>
+                    Position the clothing item clearly in frame, then capture.
+                  </p>
+                  <div className="camera-modal-actions">
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      onClick={closeCameraModal}
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      onClick={handleCapturePhoto}
+                      disabled={capturing}
+                    >
+                      {capturing ? "Capturing..." : "Capture Photo"}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="search-divider">
           <span>or search the web</span>

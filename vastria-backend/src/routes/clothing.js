@@ -32,6 +32,14 @@ router.post(
   clothingController.scanClothing,
 );
 
+// Batch scan: upload multiple images, analyze, and save items directly
+router.post(
+  "/scan-batch",
+  authMiddleware,
+  upload.array("images", 25),
+  clothingController.scanClothingBatch,
+);
+
 // Generate outfit combinations
 router.post(
   "/generate-outfits",
