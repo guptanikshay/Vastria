@@ -1,0 +1,58 @@
+services:
+  backend:
+    image: ${DOCKERHUB_USERNAME}/vastria-backend:latest
+    container_name: vastria-backend
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5000:5000"
+    env_file:
+      - ./vastria-backend/.env
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - vastria-network
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://localhost:5000/",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    image: ${DOCKERHUB_USERNAME}/vastria-frontend:latest
+    container_name: vastria-frontend
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - vastria-network
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: vastria-watchtower
+    restart: unless-stopped
+    command:
+      - --interval
+      - ${WATCHTOWER_POLL_INTERVAL:-60}
+      - --label-enable
+      - --cleanup
+      - --rolling-restart
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  vastria-network:
+    driver: bridge
