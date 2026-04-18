@@ -118,3 +118,28 @@ jobs:
             VITE_GOOGLE_CLIENT_ID=${{ secrets.VITE_GOOGLE_CLIENT_ID }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+  deploy:
+    name: Deploy to VM
+    runs-on: ubuntu-latest
+    needs: [docker]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Configure SSH key
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s' "${{ secrets.VM_SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "${{ secrets.VM_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Deploy latest images on VM
+        run: |
+          ssh -i ~/.ssh/id_ed25519 "${{ secrets.VM_USER }}@${{ secrets.VM_HOST }}" '
+            set -e
+            cd ~/Vastria
+            git pull --ff-only origin main
+            docker compose --env-file .env.prod -f docker-compose.prod.yml pull
+            docker compose --env-file .env.prod -f docker-compose.prod.yml up -d
+            docker image prune -f
+          '
